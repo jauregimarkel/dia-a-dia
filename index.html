@@ -57,6 +57,8 @@
 }
 
 html{background:var(--bg);-webkit-text-size-adjust:100%;padding-top:env(safe-area-inset-top,0px)}
+/* tira lisa bajo la barra de estado: iOS tiñe esa zona con el color del borde superior; así queda del color del fondo y no azul */
+html::before{content:"";position:fixed;top:0;left:0;right:0;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:30;pointer-events:none}
 [hidden]{display:none!important}
 img{max-width:100%}
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
