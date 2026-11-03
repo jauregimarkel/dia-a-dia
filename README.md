@@ -1,2 +1,3 @@
-# dia-a-dia
-App
+# Día a Día
+
+App personal de hábitos, dinero y agenda.
